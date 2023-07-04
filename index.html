@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project#2</title>
+<style>
+.container{
+    background-color: white;
+    width: 600px;
+    height: 100;
+    padding: 25px 30px ;
+    border-radius: 25px ;
+    box-shadow:5px 5px 20px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5;
+
+   
+
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    /* border: 2px solid red; */
+    gap: 15px;
+   
+
+
+}
+
+form input{
+    outline: none;
+    border: 1px solid grey;
+
+
+}
+
+
+.button{
+
+    border-radius: 7px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #6665ee;
+    color: white;
+
+
+
+
+}
+h5{
+    background-color: #FFD4CD;
+    font-size: 1.2rem;
+    /* width: 100%; */
+    padding: 0px 50px;
+   
+}
+.feedBack{
+    display: none;
+}
+  
+.message-content{
+    color: lightsteelblue
+
+}
+
+
+h4{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize;
+
+}
+
+.box{
+    border-radius: 7px;
+    padding: 0 10px;
+    width: 500px;
+    font-size: 1.2rem;
+
+}
+
+body, html{
+    display: flex;
+    /* place-items: center; */
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #6665ee;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.show{
+    display: block;
+}
+
+@media screen and (max-width: 601px) {
+  .container {
+    width: 90%;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+</style>
+    
+</head>
+<body>
+    
+    <div class="container">
+
+
+        <h4>A message you would like to pass</h4>
+
+       <form  id="message-form">
+
+
+        <input type="text" id = message class="box">
+        
+        <input type="submit" name="" id="submitBtn" class="button">
+        
+       </form>
+       <h5 class="feedBack">Please enter a value to pass</h5>
+       <h4 class="">Last message Delivered</h4>
+       <h4 class="message-content">Hello World</h4>
+
+ 
+
+
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
